@@ -13,7 +13,7 @@
 		A518247619E7D9D700BBE15B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A518247519E7D9D700BBE15B /* Images.xcassets */; };
 		A518247919E7D9D700BBE15B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A518247719E7D9D700BBE15B /* LaunchScreen.xib */; };
 		A518248519E7D9D700BBE15B /* RSDotsViewDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A518248419E7D9D700BBE15B /* RSDotsViewDemoTests.swift */; };
-		A518249619E7DBED00BBE15B /* MHDotsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A518249519E7DBED00BBE15B /* MHDotsView.swift */; };
+		A518249619E7DBED00BBE15B /* RSDotsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A518249519E7DBED00BBE15B /* RSDotsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +37,7 @@
 		A518247E19E7D9D700BBE15B /* RSDotsViewDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RSDotsViewDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A518248319E7D9D700BBE15B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A518248419E7D9D700BBE15B /* RSDotsViewDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSDotsViewDemoTests.swift; sourceTree = "<group>"; };
-		A518249519E7DBED00BBE15B /* MHDotsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MHDotsView.swift; sourceTree = "<group>"; };
+		A518249519E7DBED00BBE15B /* RSDotsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSDotsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,7 +118,7 @@
 		A518248E19E7DB8B00BBE15B /* RSDotsView */ = {
 			isa = PBXGroup;
 			children = (
-				A518249519E7DBED00BBE15B /* MHDotsView.swift */,
+				A518249519E7DBED00BBE15B /* RSDotsView.swift */,
 			);
 			path = RSDotsView;
 			sourceTree = "<group>";
@@ -224,7 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A518247119E7D9D700BBE15B /* ViewController.swift in Sources */,
-				A518249619E7DBED00BBE15B /* MHDotsView.swift in Sources */,
+				A518249619E7DBED00BBE15B /* RSDotsView.swift in Sources */,
 				A518246F19E7D9D700BBE15B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

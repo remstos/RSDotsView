@@ -9,7 +9,7 @@
 import UIKit
 
 
-private class MHDotView: UIView {
+private class RSDotView: UIView {
     var fillColor:UIColor = UIColor.blackColor()
     var diameter:CGFloat = CGFloat(1)
     
@@ -23,7 +23,7 @@ private class MHDotView: UIView {
 }
 
 
-class MHDotsView: UIView {
+class RSDotsView: UIView {
    
     var dotsColor:UIColor = UIColor.blackColor() {
         didSet {
@@ -56,7 +56,7 @@ class MHDotsView: UIView {
         var frame = CGRectMake(margin, self.bounds.size.height/2 - dotDiameter/2, dotDiameter, dotDiameter);
         
         for i in 0...Int(numberDots-1) {
-            var dot = MHDotView(frame: frame)
+            var dot = RSDotView(frame: frame)
             dot.diameter = frame.size.width;
             dot.fillColor = self.dotsColor;
             dot.backgroundColor = UIColor.clearColor()
@@ -68,7 +68,7 @@ class MHDotsView: UIView {
     
     func startAnimating() {
         var i:Int = 0
-        for dot in self.subviews as [MHDotView] {
+        for dot in self.subviews as [RSDotView] {
             dot.transform = CGAffineTransformMakeScale(0.01, 0.01);
             let delay = 0.1*Double(i)
             UIView.animateWithDuration(Double(0.5), delay:delay, options: UIViewAnimationOptions.CurveEaseInOut|UIViewAnimationOptions.Repeat|UIViewAnimationOptions.Autoreverse , animations: { () -> Void in
@@ -81,7 +81,7 @@ class MHDotsView: UIView {
     
     
     func stopAnimating() {
-        for dot in self.subviews as [MHDotView] {
+        for dot in self.subviews as [RSDotView] {
             dot.transform = CGAffineTransformMakeScale(1, 1);
             dot.layer.removeAllAnimations()
         }

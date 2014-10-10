@@ -10,16 +10,26 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var dotsViewA: RSDotsView!
+    @IBOutlet weak var dotsViewB: RSDotsView!
+    @IBOutlet weak var dotsViewC: RSDotsView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        var dots = MHDotsView(frame: CGRectMake(50, 50, 200, 200))
-        dots.backgroundColor = UIColor.lightGrayColor()
+        var dots = RSDotsView(frame: CGRectMake(50, 50, 300, 300))
+        dots.backgroundColor = UIColor.clearColor()
         dots.dotsColor = UIColor.redColor()
-        self.view.addSubview(dots)
         dots.startAnimating()
+        var center = self.view.center
+        dots.center = CGPointMake(center.x, center.y + 50)
+        self.view.addSubview(dots)
         
+        
+        dotsViewA.startAnimating()
+        dotsViewB.startAnimating()
+        dotsViewC.startAnimating()
     }
 
     override func didReceiveMemoryWarning() {

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A388a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="RSDotsViewDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,8 +15,77 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xcB-cL-71P" customClass="RSDotsView" customModule="RSDotsViewDemo" customModuleProvider="target">
+                                <rect key="frame" x="222" y="174" width="157" height="129"/>
+                                <color key="backgroundColor" red="0.1589752069" green="0.73881861770000001" blue="0.3764036737" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="129" id="SEB-u7-gNa"/>
+                                    <constraint firstAttribute="width" constant="157" id="Sib-hi-R7J"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="dotsColor">
+                                        <color key="value" red="0.22352941179999999" green="0.87058823529999996" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L8A-TB-Ckf" customClass="RSDotsView" customModule="RSDotsViewDemo" customModuleProvider="target">
+                                <rect key="frame" x="246" y="105" width="109" height="90"/>
+                                <color key="backgroundColor" red="0.17254901959999999" green="0.60784313729999995" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="109" id="0a6-6s-o71"/>
+                                    <constraint firstAttribute="height" constant="90" id="Hsd-CL-VU9"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
+                                        <color key="value" red="0.08788780663780664" green="0.72507440476190477" blue="0.72507440476190477" alpha="0.0" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="dotsColor">
+                                        <color key="value" red="0.091991341991341985" green="0.7589285714285714" blue="0.7589285714285714" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k5E-QH-FNt" customClass="RSDotsView" customModule="RSDotsViewDemo" customModuleProvider="target">
+                                <rect key="frame" x="260" y="61" width="81" height="66"/>
+                                <color key="backgroundColor" red="0.90588235289999997" green="0.0" blue="0.042684037750000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="81" id="Sx7-Tw-nDR"/>
+                                    <constraint firstAttribute="height" constant="66" id="lIH-32-HUU"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="dotsColor">
+                                        <color key="value" red="0.10921216129549463" green="0.9010003306878307" blue="0.9010003306878307" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="L8A-TB-Ckf" secondAttribute="centerY" constant="150" id="GZi-oH-P55"/>
+                            <constraint firstAttribute="centerY" secondItem="xcB-cL-71P" secondAttribute="centerY" constant="61.5" id="IfV-Sl-0kn"/>
+                            <constraint firstAttribute="centerX" secondItem="xcB-cL-71P" secondAttribute="centerX" id="QI5-4O-K1p"/>
+                            <constraint firstAttribute="centerY" secondItem="k5E-QH-FNt" secondAttribute="centerY" constant="206" id="RNk-8e-iwh"/>
+                            <constraint firstAttribute="centerX" secondItem="k5E-QH-FNt" secondAttribute="centerX" constant="-0.5" id="fRX-em-Ltn"/>
+                            <constraint firstAttribute="centerY" secondItem="xcB-cL-71P" secondAttribute="centerY" id="lMP-1A-qEM"/>
+                            <constraint firstAttribute="centerX" secondItem="L8A-TB-Ckf" secondAttribute="centerX" constant="-0.5" id="xvV-Ws-e3G"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="lMP-1A-qEM"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="dotsViewA" destination="xcB-cL-71P" id="KTM-cX-ZOU"/>
+                        <outlet property="dotsViewB" destination="L8A-TB-Ckf" id="w0Y-dv-Wrd"/>
+                        <outlet property="dotsViewC" destination="k5E-QH-FNt" id="h6O-wM-Dlc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
